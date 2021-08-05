@@ -1,0 +1,192 @@
+@font-face {
+    font-family: "Abril-regular";
+    src: url("AbrilFAtface-Regular.ttf");
+}
+
+@font-face {
+    font-family: "gotham-ssm";
+    src: url("gothamssm.otf");
+}
+
+
+@font-face {
+    font-family: "Montsserat";
+    src: url("Montserrat-Bold.ttf");
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(23, 23, 23);
+    overflow-x: hidden;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: rgb(23, 23, 23);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a {
+    font-family: gotham-ssm, serif;
+        display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 0.75em;
+    font-size: 17px;
+}
+
+.navbar  a:hover{
+    transition-duration: 0s;
+    background-color: #f1f1f1;
+    color: #333333;
+}
+
+body::-webkit-scrollbar{
+    width: 4px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(0, 0,0,2);
+}
+
+.logo {
+    width: 9em;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+    border-radius: 0.75em;
+    background: rgba(241, 241, 241, 0.57);
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    width: 8px;
+}
+
+
+.main_im {
+    background-image: url("clan.jpg");
+    min-height: 760px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    background-size: cover;
+}
+
+.text {
+
+    position: fixed;
+    text-shadow:black 0.1em 0.1em 0.2em, 2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, -2px 0 0 black, 2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black, -2px -2px 0 black;    text-align: center;
+    top: 10%;
+    color: #a1dde8;
+    font-family: Montsserat, serif;
+    font-size: 100px;
+    font-weight: bold;
+    margin: 5px 0 10px;
+    width: 100%;
+}
+
+.chef{
+    background-image: url("Screenshot.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    min-height: 350px;
+    background-position: center;
+}
+
+.topcl{
+    background-image: url("topim.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    min-height: 200px;
+    background-position: center;
+}
+
+.logoclan {
+    position: fixed;
+    top:30%;
+    height: 300px;
+    left: 43%;
+}
+
+.hierarchie {
+    height: 800px;
+}
+
+.arrow {
+    position: relative;
+    left:100%;
+    top:85%;
+    padding: 5px;
+    margin: 30px auto;
+    background: #000;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transition: all 0.2s linear;
+}
+
+.arrow:hover {
+    transform: translate3d(0, 10px, 0);
+}
+
+.arrow::after {
+    content: "";
+    position: absolute;
+    left: 25%;
+    z-index: 11;
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    top: 15%;
+    transform: rotate(225deg);
+}
+
+.anim {
+    animation: lefttoright 2s linear forwards infinite;
+}
+
+@keyframes lefttoright {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-1%);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.bottom {
+    text-align: center;
+}
+
+.bottom p {
+    color: #8d8d8d;
+}
+
+.bottom a {
+    top: 90%;
+    color: #8d8d8d;
+    text-decoration: none;
+}
+
+#back p {
+    color: #8d8d8d;
+}
